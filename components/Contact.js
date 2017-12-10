@@ -5,16 +5,16 @@ var Contact = React.createClass({
 
     render: function() {
         return (
-			<div className = {"contactItem"} >
-	            <img className = {"contactImage"} src = {"http://icons.veryicon.com/ico/System/100%20Flat%20Vol.%202/contacts.ico"} alt = "contact" / >
-	            <p className = {"contactLabel"} />
-	            	First name: {this.props.item.firstName0}
-				</p>
-				<p className = {"contactLabel"}>
-	            	Last name: {this.props.item.lastName}
-				</p>
-				<a href = {"mailto" + this.props.item.email}>{this.props.item.email}</a>
-			</div>
+		<div className = {"contactItem"} >
+			<img className = {"contactImage"} src = {"http://icons.veryicon.com/ico/System/100%20Flat%20Vol.%202/contacts.ico"} alt = "contact" / >
+			<p className = {"contactLabel"} />
+				First name: {this.props.item.firstName0}
+			</p>
+			<p className = {"contactLabel"}>
+	            		Last name: {this.props.item.lastName}
+			</p>
+			<a href = {"mailto" + this.props.item.email}>{this.props.item.email}</a>
+		</div>
         )
     }
 });
@@ -48,10 +48,10 @@ var contactForm = {
 var App = React.createClass({
     render: function() {
         return (
-			<div className = {app}>
-				<ContactForm contact={contactForm} />
-				<Contacts items={contacts}>
-			</div>
+		<div className = {app}>
+			<ContactForm contact={contactForm} />
+			<Contacts items={contacts}>
+		</div>
         )
     }
 });
